@@ -6,16 +6,16 @@ import Viewer from './pages/Viewer'
 
 
 export default function App(){
-return (
-<div>
-<Navbar />
-<Routes>
-<Route path="/" element={<Navigate to="/register" replace />} />
-<Route path="/register" element={<Registration />} />
-<Route path="/groups" element={<Groups />} />
-<Route path="/viewer" element={<Viewer />} />
-<Route path="*" element={<div className="page">Not Found</div>} />
-</Routes>
-</div>
-)
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/register" replace />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/groups" element={<Groups />} />
+        <Route path="/viewer" element={<Viewer />} />
+        <Route path="*" element={<div className="page">Not Found</div>} />
+      </Routes>
+    </div>
+  )
 }
