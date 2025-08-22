@@ -1,0 +1,17 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+:root{
+--app-green: #1f9d55; /* table buttons */
+--app-blue: #2563eb; /* rankings */
+}
+
+
+.btn-table { background: var(--app-green); color: #fff; }
+.rank-badge { background: var(--app-blue); }
+.viewer-mode { color: #000; }
+
+
+/* Layout helpers */
+.page { padding: 1rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
